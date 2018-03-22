@@ -2,7 +2,7 @@
 
 100% working container for [Nominatim](https://github.com/openstreetmap/Nominatim).
 
-[![](https://images.microbadger.com/badges/image/mediagis/nominatim.svg)](https://microbadger.com/images/mediagis/nominatim "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/mediagis/nominatim.svg)](https://microbadger.com/images/gpproton/nominatim-westafrica/ "Get your own image badge")
 
 # Supported tags and respective `Dockerfile` links #
 
@@ -21,7 +21,7 @@ If a different country should be used you can set `PBF_DATA` on build.
 1. Clone repository
 
   ```
-  # git clone git@github.com:mediagisgpproton/nominatim-westafrica.git
+  # git clone git@github.com:gpproton/nominatim-westafrica.git
   # cd nominatim-docker/3.0
   ```
 
