@@ -1,5 +1,5 @@
 FROM ubuntu:xenial
-MAINTAINER dorukozturk <dorukozturk@kitware.com>
+MAINTAINER gpproton <godwin@peter.com.ng>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LANG C.UTF-8
@@ -40,7 +40,7 @@ COPY local.php /app/src/build/settings/local.php
 COPY nominatim.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Load initial data
-ARG PBF_DATA=http://download.geofabrik.de/europe/monaco-latest.osm.pbf
+ARG PBF_DATA=https://track-api.realtrack.ml/westafrica.osm.pbf
 RUN curl -L -f $PBF_DATA --create-dirs -o /app/src/data.osm.pbf
 RUN curl http://www.nominatim.org/data/country_grid.sql.gz > /app/src/data/country_osm_grid.sql.gz
 RUN service postgresql start && \
@@ -53,7 +53,7 @@ RUN service postgresql start && \
     service postgresql stop
 
 EXPOSE 5432
-EXPOSE 8080
+EXPOSE 8084
 
 COPY start.sh /app/start.sh
 CMD /app/start.sh
