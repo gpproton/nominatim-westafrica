@@ -21,7 +21,7 @@ If a different country should be used you can set `PBF_DATA` on build.
 1. Clone repository
 
   ```
-  # git clone git@github.com:mediagis/nominatim-docker.git
+  # git clone git@github.com:mediagisgpproton/nominatim-westafrica.git
   # cd nominatim-docker/3.0
   ```
 
