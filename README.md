@@ -22,7 +22,7 @@ If a different country should be used you can set `PBF_DATA` on build.
 
   ```
   # git clone --recursive https://github.com/gpproton/nominatim-westafrica.git
-  # cd nominatim-docker/3.0
+  # cd nominatim-westafrica/3.0
   ```
 
 2. Modify Dockerfile, set your url for PBF
