@@ -11,10 +11,10 @@
 
 Run [http://wiki.openstreetmap.org/wiki/Nominatim](http://wiki.openstreetmap.org/wiki/Nominatim) in a docker container. Clones the current master and builds it. This is always the latest version, be cautious as it may be unstable.
 
-Uses Ubuntu 14.04 and PostgreSQL 9.3
+Uses Ubuntu 16.04 and PostgreSQL 9.5
 
 # Country
-To check that everything is set up correctly, download and load to Postgres PBF file with minimal size - Europe/Monacco (latest) from geofabrik.de.
+To check that everything is set up correctly, download and load to Postgres PBF file with minimal size - Africa/WestAfrica (latest)
 
 If a different country should be used you can set `PBF_DATA` on build.
 
@@ -22,7 +22,7 @@ If a different country should be used you can set `PBF_DATA` on build.
 
   ```
   # git clone git@github.com:mediagis/nominatim-docker.git
-  # cd nominatim-docker/2.5
+  # cd nominatim-docker/3.0
   ```
 
 2. Modify Dockerfile, set your url for PBF
