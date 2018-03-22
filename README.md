@@ -21,7 +21,7 @@ If a different country should be used you can set `PBF_DATA` on build.
 1. Clone repository
 
   ```
-  # git clone git@github.com:gpproton/nominatim-westafrica.git
+  # git clone --recursive https://github.com/gpproton/nominatim-westafrica.git
   # cd nominatim-docker/3.0
   ```
 
