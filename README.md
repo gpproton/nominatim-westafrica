@@ -30,10 +30,10 @@ If a different country should be used you can set `PBF_DATA` on build.
   ```
   ENV PBF_DATA https://track-api.realtrack.ml/westafrica.osm.pbf
   ```
-3. Configure incrimental update. By default CONST_Replication_Url configured for Monaco.
-If you want a different update source, you will need to declare `CONST_Replication_Url` in local.php. Documentation [here] (https://github.com/openstreetmap/Nominatim/blob/master/docs/Import-and-Update.md#updates). For example, to use the daily country extracts diffs for Gemany from geofabrik add the following:
+3. Configure incrimental update. By default CONST_Replication_Url configured for Nigeria.
+If you want a different update source, you will need to declare `CONST_Replication_Url` in local.php. Documentation [here] (https://github.com/openstreetmap/Nominatim/blob/master/docs/Import-and-Update.md#updates). For example, to use the daily country extracts diffs for Nigeria from geofabrik add the following:
   ```
-  @define('CONST_Replication_Url', 'http://download.geofabrik.de/europe/germany-updates');
+  @define('CONST_Replication_Url', 'http://download.geofabrik.de/africa/nigeria-updates/');
   ```
 
 4. Build 
